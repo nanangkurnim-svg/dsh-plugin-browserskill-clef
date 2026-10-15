@@ -1,0 +1,17 @@
+{
+  "defaultModel": "clef-omni",
+  "accounts": [
+    {
+      "label": "Primary Account",
+      "accountId": "YOUR_CLOUDFLARE_ACCOUNT_ID_HERE",
+      "apiToken": "YOUR_CLOUDFLARE_API_TOKEN_HERE",
+      "enabled": true
+    },
+    {
+      "label": "Backup Account",
+      "accountId": "BACKUP_ACCOUNT_ID_HERE",
+      "apiToken": "BACKUP_API_TOKEN_HERE",
+      "enabled": true
+    }
+  ]
+}
