@@ -23,12 +23,12 @@
     "browser-automation"
   ],
   "type": "module",
-  "main": "lib/index.mjs",
+  "main": "lib/index.js",
   "types": "lib/index.d.mts",
   "exports": {
     ".": {
       "types": "./lib/index.d.mts",
-      "default": "./lib/index.mjs"
+      "default": "./lib/index.js"
     },
     "./client": {
       "default": "./lib/client.cjs"
