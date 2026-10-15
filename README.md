@@ -23,6 +23,13 @@ Enhancement for `@wxg-prc-cpg/browser-skill-dsh-plugin` in **DeepSeek Harness (D
 
 ---
 
+### ⚡ DSH Tool: `browser_clef`
+Directly available to AI agents in DeepSeek Harness conversations:
+- **`browser_clef({ action: "goal", goal: "...", url: "..." })`**: Autonomous goal loop with Cloudflare Clef.
+- **`browser_clef({ action: "triage" })`**: <200ms page structure classification and next-step recommendation.
+- **`browser_clef({ action: "status" })`**: Real-time pool status, cooldowns, and request counts.
+- **`browser_clef({ action: "inspect_instagram", username: "..." })`**: Instant Instagram profile engagement and content analysis.
+
 ## 🛠️ Architecture: Reflex & Cortex
 
 ```

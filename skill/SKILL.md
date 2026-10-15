@@ -1,6 +1,6 @@
 ---
 name: browser-skill
-description: Automate the user's logged-in Chromium through this plugin's injected browser_* tools. Use to read pages, fill forms, operate tabs, inspect page activity, debug a website, or test a UI.
+description: Automate the user's logged-in Chromium through this plugin's injected browser_* tools and ultrafast Cloudflare Clef decision engine (browser_clef). Use to read pages, fill forms, operate tabs, inspect page activity, debug a website, or test a UI.
 ---
 
 # browser-skill for DeepSeek Harness
@@ -65,6 +65,17 @@ Inspect unknown effects before retrying. On an error or two attempts without pro
 read [human help and recovery](references/help-and-recovery.md).
 Arbitrary page-script evaluation and interaction recording are intentionally unsupported.
 Do not invent tools or bypass these limits.
+
+## Fast Autonomous Browsing with Cloudflare Clef (`browser_clef`)
+
+When a task requires fast autonomous browsing, form triage, speculative navigation, or repetitive actions:
+Use `browser_clef`:
+- `browser_clef({ action: "goal", goal: "Complete profile information based on CV", url: "https://glints.com/id/profile" })`: Runs an autonomous speculative loop powered by Cloudflare Clef (`@cf/cloudflare/clef-omni` / `clef-flash`).
+- `browser_clef({ action: "triage" })`: Instant (<200ms) page classification and recommended next actions.
+- `browser_clef({ action: "status" })`: Checks status, latency, and cooldowns of pooled Cloudflare accounts.
+- `browser_clef({ action: "inspect_instagram", username: "username", count: 10 })`: Ultrafast Instagram engagement rate & content analysis.
+
+Clef uses multi-account Cloudflare Workers AI (`@cf/cloudflare/clef-omni` / `clef-flash`) with sub-second response times and zero output token cost.
 
 ## Read details only when needed
 

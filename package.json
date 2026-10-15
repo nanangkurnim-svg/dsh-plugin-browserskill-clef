@@ -1,7 +1,7 @@
 {
   "name": "@wxg-prc-cpg/browser-skill-dsh-plugin",
   "description": "DeepSeek Harness BrowserSkill plugin enhanced with Cloudflare Clef (decision models, multi-account pooling, fast local runner, and Settings UI)",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "license": "MIT",
   "publishConfig": {
     "access": "public",
